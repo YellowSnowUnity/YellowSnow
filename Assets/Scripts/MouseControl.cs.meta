@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a1fc7b89126c13f40aa0e06178da65ea
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DrawMaterial: {fileID: 2100000, guid: 6e3c4bda8d99d584ea9828cdf8f34003, type: 2}
+  - SplatMap: {instanceID: 0}
+  - Camera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
