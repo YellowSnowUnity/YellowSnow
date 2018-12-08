@@ -18,8 +18,8 @@ A SplatPainter script is used to trigger the drawing shader, and is connected to
 
 # Demos
 
-Android - https://play.google.com/store/apps/details?id=net.jdeuce.YellowSnow
-WebGL - https://jdeuce.itch.io/yellow-snow
+* Android - https://play.google.com/store/apps/details?id=net.jdeuce.YellowSnow
+* WebGL - https://jdeuce.itch.io/yellow-snow
 
 
 # Shader graph
@@ -27,5 +27,5 @@ The ground shader seems to be working fine, but I left the code version to be co
 The drawing shader does not seem to work well as a graph, because as far as I can tell, the Graphics.Blit workflow doesn't work for Unlit shader graph shaders right now.. See https://forum.unity.com/threads/feedback-wanted-shader-graph.511960/page-22#post-3570057
 
 # Shout outs
-/u/snow_pee on reddit - his post inspired me to write it - https://www.reddit.com/user/snow_pee
-Peer Play - snow tracks tutorial - https://www.youtube.com/watch?v=Sr2KoaKN3mU
+* /u/snow_pee on reddit - his post inspired me to write it - https://www.reddit.com/user/snow_pee
+* Peer Play - snow tracks tutorial - https://www.youtube.com/watch?v=Sr2KoaKN3mU
