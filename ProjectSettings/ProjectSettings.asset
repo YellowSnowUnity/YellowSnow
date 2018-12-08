@@ -154,7 +154,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: net.jdeuce.YellowSnow
   buildNumber: {}
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1

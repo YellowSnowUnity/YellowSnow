@@ -12,6 +12,8 @@ public class SplatPainter : MonoBehaviour {
     public float SlowResetRate = 0.05f;
     public float SlowResetTime = 1f;
     private float OrigRate = 0;
+
+    public FPS FPS;
     void Start() {
         OrigRate = DrawMaterial.GetFloat("_RegenAmount");
         Reset();
@@ -56,6 +58,8 @@ public class SplatPainter : MonoBehaviour {
             DrawMaterial.SetVector("_Coordinate", new Vector4(Coordinate.Value.x, Coordinate.Value.y));
             Coordinate = null;
         }
+
+        DrawMaterial.SetFloat("_FPS", FPS.FramesPerSec);
         Blit();
 
     }

@@ -721,6 +721,7 @@ MonoBehaviour:
   Debug: 0
   SlowResetRate: 0.3
   SlowResetTime: 1
+  FPS: {fileID: 908336547}
 --- !u!64 &706625935
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -949,6 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d97484ededfa5b34bbcf4f5851a88022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FramesPerSec: 0
 --- !u!114 &908336548
 MonoBehaviour:
   m_ObjectHideFlags: 0

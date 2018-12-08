@@ -5,7 +5,7 @@ using System.Collections;
 public class FPS : MonoBehaviour
 {
 
-    private int FramesPerSec;
+    public float FramesPerSec;
     private float frequency = 1.0f;
     private string fps;
     private TMPro.TextMeshProUGUI Text;
@@ -28,8 +28,9 @@ public class FPS : MonoBehaviour
             float timeSpan = Time.realtimeSinceStartup - lastTime;
             int frameCount = Time.frameCount - lastFrameCount;
 
+            FramesPerSec = frameCount / timeSpan;
             // Display it
-            fps = string.Format("FPS: {0}", Mathf.RoundToInt(frameCount / timeSpan));
+            fps = string.Format("FPS: {0}", Mathf.RoundToInt(FramesPerSec));
         }
     }
 

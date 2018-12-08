@@ -11,6 +11,7 @@
         _Regenerating("Regenerating", int) = 1
         _RegenAmount("Regen amount", float) = 0
         _RegenOpacity("Regen opacity", float) = 0
+        _FPS("FPS Factor", float) = 60
 
 	}
 	SubShader
@@ -48,6 +49,7 @@
             int _Regenerating;
             half _RegenAmount;
             half _RegenOpacity;
+            float _FPS;
 
             float rand(float2 co)
             {
@@ -80,7 +82,8 @@
                 if (_Regenerating) {
                     // re-generate snow over time by turning colors back to black
                     float rValue = ceil(rand(i.uv * _Time.x) - (1 - _RegenAmount));
-                    output = saturate(output - (rValue * _RegenOpacity));
+                    float fpsFactor =  60.0 / _FPS;
+                    output = saturate(output - (rValue *  fpsFactor * _RegenOpacity));
                 }
 
                 return output;
