@@ -1,5 +1,6 @@
 # Project Yellow Snow
 Project Yellow Snow is a quick peeing in the snow simulator implemented in a weekend as an exercise in writing these kinds of shaders
+![Sample Gif](SampleGif.gif)
 
 # Version
 Tested with Unity 2018.2.18f1 but should work with anything older.
@@ -13,7 +14,7 @@ There are two shaders, one which is used to render the mesh for the ground plane
 
 A SplatPainter script is used to trigger the drawing shader, and is connected to particle collisions.
 
-![Sample](Sample.png)
+![Splat Sample](Sample.png)
 
 # Shader graph
 The ground shader seems to be working fine, but I left the code version to be compatible with older unities.
